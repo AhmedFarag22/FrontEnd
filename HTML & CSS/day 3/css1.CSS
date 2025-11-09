@@ -1,0 +1,53 @@
+/* css1.css */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    background-image: url("img/asd.jpg");
+    background-size: cover; 
+    /* background-size: contain; */       
+    background-position: center; 
+
+    transition: all 1s ease-in-out 1s;
+    background-color: rgba(red, green, rgb(149, 149, 186), alpha);
+}
+.caption {
+    background-color: rgba(200, 30, 40, 0.3);
+    visibility: hidden;
+     transition: all 3s ease-in-out 1s;
+     width: 100%;
+     height: 100%;
+}
+.img:hover {
+    transform: rotate(180deg);
+    transform: translateX(500px);
+}
+
+.inner {
+    transform: translateX(300px);
+    transition: all 1s 4s;
+}
+
+.sq {
+    transition: all 1s ease-in-out 1s;
+}
+.sq:hover {
+    
+    transform: scale(1.1, 1.1);
+}
+
+
+.img:hover .caption{
+
+     visibility: visible;
+     transform: rotate(360deg);
+}
+
+.img:hover .inner {
+    transform: translateX(0px);
+}
+

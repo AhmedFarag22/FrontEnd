@@ -1,0 +1,68 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+:root {
+    --var-maincolor: red;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    /* animation-name: color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation: move 5s infinite alternate;
+    box-sizing: border-box; /* to take padding an borders in hus width and hiegh */
+    /* box-shadow: h-offset v-offset blure spread color */
+    box-shadow: 20px 20px 6px red;
+
+    }
+
+.square>p { /* all p  in square  (only children not grand children) */
+color: var(--var-maincolor);
+
+}
+
+.square+p { /* only the first p */
+
+}
+
+.square~p { /* any p after square */
+
+}
+@keyframes move {
+    0% {
+        transform: translateX(200px) rotate(360deg);
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
+@keyframes color {
+    0% {
+        background-color: blue;
+
+    }
+
+    40% {
+        background-color: black;
+    }
+
+    60% {
+        background-color: blueviolet;
+    }
+
+    80% {
+        background-color: brown;
+    }
+
+    100% {
+        background-color: chartreuse;
+    }
+}

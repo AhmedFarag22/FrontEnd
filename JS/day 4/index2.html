@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fizz Buzz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 40px;
+    }
+    input {
+      width: 80px;
+      padding: 5px;
+      margin-right: 10px;
+      text-align: center;
+    }
+    button {
+      padding: 6px 15px;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Fizz Buzz Game</h2>
+  <label>Number:
+    <input type="number" id="numInput" placeholder="Enter number">
+  </label>
+  <button onclick="checkFizzBuzz()">Check</button>
+
+  <div id="output"></div>
+
+  <script>
+    function checkFizzBuzz() {
+      const num = parseInt(document.getElementById('numInput').value);
+      const output = document.getElementById('output');
+
+      if (isNaN(num)) {
+        output.textContent = "Please enter a valid number.";
+        return;
+      }
+
+      let result = "";
+
+      if (num % 3 === 0 && num % 5 === 0) {
+        result = "fizz buzz";
+      } else if (num % 3 === 0) {
+        result = "fizz";
+      } else if (num % 5 === 0) {
+        result = "buzz";
+      } else {
+        result = "none";
+      }
+
+      output.textContent = result;
+    }
+  </script>
+
+</body>
+</html>

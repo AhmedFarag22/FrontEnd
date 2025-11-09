@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ready Go Game</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      text-align: center; 
+      margin-top: 40px;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 20px 0;
+    }
+    .circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .active.ready { background-color: green; }
+    .active.steady { background-color: gold; color: black; }
+    .active.go { background-color: red; }
+    input {
+      width: 50px;
+      text-align: center;
+      padding: 5px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 5px 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Ready Go Game</h2>
+  <label>Number:
+    <input type="number" id="numInput" min="1" max="3">
+  </label>
+  <button onclick="lightCircle()">Show</button>
+
+  <div class="container">
+    <div id="ready" class="circle">Ready</div>
+    <div id="steady" class="circle">Steady</div>
+    <div id="go" class="circle">Go</div>
+  </div>
+
+  <script>
+    function lightCircle() {
+      // احصل على الرقم المدخل
+      const num = parseInt(document.getElementById('numInput').value);
+
+      // احصل على الدوائر
+      const ready = document.getElementById('ready');
+      const steady = document.getElementById('steady');
+      const go = document.getElementById('go');
+
+      // أعد ضبط جميع الدوائر
+      ready.className = 'circle';
+      steady.className = 'circle';
+      go.className = 'circle';
+
+      // تحقق من الرقم واضئ الدائرة المناسبة
+      if (num === 1) {
+        ready.classList.add('active', 'ready');
+      } else if (num === 2) {
+        steady.classList.add('active', 'steady');
+      } else if (num === 3) {
+        go.classList.add('active', 'go');
+      } else {
+        alert('الرجاء إدخال رقم من 1 إلى 3');
+      }
+    }
+  </script>
+
+</body>
+</html>

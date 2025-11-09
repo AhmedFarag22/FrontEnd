@@ -1,0 +1,148 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+
+ul {
+    
+    position: relative;
+    
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+  right: 10vw;
+  top: 0%;
+  
+    
+}
+
+
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+header {
+     font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+    display: flex;
+    flex-direction: column;
+   
+    width: 1520px;
+    height: 940px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://www.engage.veented.com/bakery/wp-content/uploads/sites/27/2017/04/drew-coffman-1872.jpg);
+    background-size: cover;
+   
+}
+
+.intro {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    line-height: 50px;
+}
+
+.logo img {
+    position: absolute;
+    width: 220px;
+    height: 60px;
+    top: 5%;
+    left: 10%;
+}
+
+.butt {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.learn {
+    border-radius: 6px;
+    padding: 0px 30px;
+    background-color:#8e7754;
+    transition: all 1s 0s;
+}
+
+.contact {
+    border-radius: 6px;
+    padding: 0px 30px;
+    background-color:transparent;
+    border: solid 2px ;
+    transition: all 1s 0s;
+}
+
+.learn:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.contact:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.section {
+    display: flex;
+  
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products {
+
+    display: flex;
+  
+    
+}
+
+.part {
+    width: 25%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.se {
+    background-color: #332e26;
+    display: flex;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-color: #1d1c19;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+nav {
+  position: fixed;       /* يخلي الناف ثابت */
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10vw;
+  background-color: rgba(0,0,0,0.5); /* خلفية عشان النص يبقى واضح */
+  z-index: 1000;         /* يخليه فوق باقي العناصر */
+}
+

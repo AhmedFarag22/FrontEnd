@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    background-color: rgb(29, 29, 52);
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.logo {
+    color: aliceblue;
+    font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: large;
+ 
+  position: relative;
+  top: 20px;   /* يطلّع لفوق */
+  left: 70px;
+}
+
+.nav-link {
+    display: flex;
+   
+    width: 20%;
+    justify-content: space-between;
+
+    position: relative;
+
+    top: 30px;
+    right: 50px;
+    
+}
+
+.nav-actions {
+    display: flex;
+    gap: 20px;
+position: relative;
+   top: 20px;   /* يطلّع لفوق */
+   right: 70px;
+
+
+}
+
+.nav-actions .join{
+    display: flex;
+    gap: 20px;
+position: relative;
+   top: 20px;   /* يطلّع لفوق */
+   right: 70px;
+
+   border-radius: 6px;
+   color:aliceblue;
+   padding: 8px 16px;
+   background-color: rgb(8, 103, 172);
+}
+
+.nav-actions .login{
+    display: flex;
+    gap: 20px;
+position: relative;
+   top: 20px;   /* يطلّع لفوق */
+   right: 70px;
+
+   border-radius: 6px;
+   color:aliceblue;
+   padding: 8px 16px;
+   
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    color: aliceblue;
+}
+
+.butt {
+    display: flex;
+    position: relative;
+    gap: 20px;
+}
+
+.butt .get{
+    border-radius: 6px;
+    padding: 8px 16px;
+    background-color: blue;
+}
+
+.butt .learn{
+    background: transparent;
+    border: 2px solid rgb(8, 103, 172);
+    border-radius: 6px;
+    padding: 8px 16px;
+    border-color: blue;
+    
+}
+
+.cards {
+    display: flex;
+   
+    color: black;
+    gap: 10px;
+    width: 60%;
+}
+a:hover {
+    color: black;
+}
+.card {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+   background-color: aliceblue;
+   padding: 10px 60px;
+    color: black;
+    gap: 10px;
+    width: 60%;
+}

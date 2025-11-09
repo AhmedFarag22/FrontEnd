@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.bigbox{
+    background-image: url(drew-coffman-1872.jpg);
+    background-size: cover;
+}
+/* Header */
+header {
+    
+  position: absolute;
+   
+  top: 0;
+  left: 0;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  color: white;
+}
+header span {
+margin-right: 700px;    
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+ 
+
+nav a {
+  margin-left: 25px;
+  font-size: 18px;
+  color: white;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d4b46a;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  position: relative;
+  top: 100px;
+ left: 300px;
+   
+}
+
+.overlay {
+  text-align: center;
+   
+  padding: 60px;
+  border-radius: 10px;
+  color: white;
+}
+
+.overlay h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.overlay h2 {
+  font-size: 24px;
+}
+
+.overlay p {
+  font-size: 18px;
+  margin: 20px 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons .btn {
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.btn.primary {
+  background: #a18c5f;
+  color: white;
+}
+
+.btn.secondary {
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+}
+
+.section {
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+ 
+
+.container img {
+    width: 40%;
+    height: 89%;
+  
+}
+
+ 
+
+.text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.text p, .text li {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+ 
+.baking {
+  background: #fff;
+  text-align: center;
+}
+
+.baking h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.baking p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.baking-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.baking .item {
+  flex: 1 1 250px;
+  background: url(bakery-item.jpg) no-repeat center center/cover;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.baking .item h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+}
+
+ 
+.contact {
+  background: #fff;
+}
+
+ 
+
+.contact .text ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 60px 20px 20px;
+}
+
+.footer-cols {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.footer-cols div {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+footer h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+footer p, footer li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.bottom {
+  text-align: center;
+  border-top: 1px solid #555;
+  padding-top: 20px;
+}
+
+.bottom img {
+  width: 50px;
+  margin-bottom: 10px;
+}

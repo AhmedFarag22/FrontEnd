@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Registration</title>
+</head>
+<body>
+    <form method="get">
+
+        <div>
+        <label for="Firstname">Firstname</label>
+        <input type="text" id="Firstname" name="Firstname">
+    </div>
+    
+<br>
+    <div>
+        <label for="Lastname">Lastname: </label>
+        <input type="text" id="Lastname" name="Lastname">
+    </div>
+
+    <div>
+        <label for="Course">Course</label>
+        <select>
+            <option selected disabled>course</option>
+            <optgroup label="FrontEnd">
+                <option name="HTML">HTML</option>
+            <option name="CSS">CSS</option>
+            </optgroup>
+            
+
+            <optgroup label="BackEnd">
+                    <option name="Java">Java</option>
+                    <option name="C#">C#</option>
+             </optgroup> 
+        </select>
+    </div>
+    
+    <div>
+        <label>Gender :</label> <br>
+    <input type="radio" name="gender" value="Male">Male</input>
+    <input type="radio" name="gender" value="Female">Female</input>
+    </div>
+    
+    <br>
+
+    <div>
+        <label>Hobbies</label>
+        <br>
+        <label for="prog">programming</label>
+        <input type="checkbox" id="prog" name="programming">
+        <br>
+        <label for="crick">Cricket</label>
+        <input type="checkbox" id="crick" name="crick">
+    </div>
+
+    <div>
+        <label for="phone">Phone</label>
+        <input type="number" id="phone" name="phone">
+    </div>
+
+    <br>
+    <textarea rows="5" cols="10" minlength="3" maxlength="20" name="text">
+
+    </textarea>
+
+    <br>
+
+    <label for="em" >Email</label>
+    <input type="email" name="email" id="em">
+
+    <br>
+
+    <label for="password" >Password</label>
+    <input type="password" id="password" name="password">
+
+    <br>
+
+    <input type="submit" value="Submit">
+
+    <input type="reset" value="reset">
+    </form>
+</body>
+</html>
